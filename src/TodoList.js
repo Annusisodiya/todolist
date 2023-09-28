@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
 function TodoList() {
-  // State to manage the list of tasks
+  
   const [tasks, setTasks] = useState([]);
-  // State to manage the input field
+  
   const [taskInput, setTaskInput] = useState('');
 
-  // Function to add a new task
+  
   const addTask = () => {
     if (taskInput.trim() !== '') {
       setTasks([...tasks, taskInput]);
@@ -14,7 +14,7 @@ function TodoList() {
     }
   };
 
-  // Function to remove a task
+  
   const removeTask = (index) => {
     const newTasks = [...tasks];
     newTasks.splice(index, 1);
